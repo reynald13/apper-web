@@ -1,0 +1,105 @@
+.site-footer {
+    background-color: var(--color-white);
+    padding: 60px 20px;
+    border-top: 1px solid var(--color-light-gray);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    max-width: 50%;
+}
+
+.footer-logo {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: var(--color-black);
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.footer-logo span {
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-section h4 {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #606060;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-section p,
+.footer-section a {
+    font-family: "Inter", sans-serif;
+    color: var(--color-black);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+    margin: 0;
+}
+
+.footer-section a {
+    text-decoration: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: var(--color-black);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: var(--color-dark-gray);
+    padding-top: 20px;
+    border-top: 1px solid var(--color-light-gray);
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-left,
+    .footer-right {
+        max-width: 100%;
+    }
+
+    .footer-left {
+        margin-bottom: 30px;
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+    }
+}

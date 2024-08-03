@@ -1,0 +1,54 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apper Studio</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/hero.css" />
+    <link rel="stylesheet" href="/styles/featured-collaboration.css" />
+    <link rel="stylesheet" href="/styles/cta.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="/styles/header.css" as="style" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      as="style"
+    />
+    <meta
+      name="description"
+      content="Apper Studio - Professional Web Development Services"
+    />
+    <meta property="og:title" content="Apper Studio" />
+    <meta
+      property="og:description"
+      content="Professional Web Development Services"
+    />
+    <meta property="og:image" content="/images/apper-studio-logo.png" />
+    <meta property="og:url" content="https://www.apperstudio.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- At the end of <body> -->
+    <script src="/scripts/menu-toggle.js" defer></script>
+  </head>
+  <body>
+    <Header />
+    <main role="main">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,29 @@
+/* cta.css */
+.cta-section {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.cta-section h2 {
+    padding: 40px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 84px;
+}
+
+@media (max-width: 768px) {
+    .cta-section {
+        padding: 60px 20px;
+    }
+
+    .cta-section h2 {
+        font-size: 32px;
+        line-height: 48px;
+        padding: 20px;
+    }
+}

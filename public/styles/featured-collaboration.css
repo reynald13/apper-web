@@ -1,0 +1,139 @@
+.featured-collaboration {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured-collab-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 140px;
+    margin-bottom: 50px;
+}
+
+.featured-collab-content h2 {
+    color: var(--color-black);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    flex-basis: 30%;
+}
+
+.featured-collab-content p {
+    color: var(--color-black);
+    margin-top: 5%;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    flex-basis: 70%;
+}
+
+.collaboration-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+    margin-top: 10%;
+}
+
+.collaboration-item {
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collaboration-item:nth-child(2n) {
+    align-self: start;
+    margin-top: -80px;
+}
+
+.collaboration-item:hover {
+    transform: translateY(-10px);
+}
+
+.collab-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+.collaboration-item h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--color-black);
+    margin-bottom: 15px;
+}
+
+.collaboration-item p {
+    font-family: "Inter", sans-serif;
+    color: var(--color-dark-gray);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.collab-button {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-black);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.collab-button svg {
+    margin-left: 10px;
+    stroke: var(--color-white);
+}
+
+.collab-button:hover {
+    background-color: var(--color-primary-dark);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .featured-collab-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .featured-collab-content h2 {
+        text-align: left;
+        font-size: 2.5rem;
+    }
+
+    .featured-collab-content p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .collaboration-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .collaboration-item:nth-child(2n) {
+        align-self: start;
+        margin-top: -20px;
+    }
+}
